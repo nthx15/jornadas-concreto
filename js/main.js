@@ -3,7 +3,7 @@
   var TZ_OFFSET = -6;
   function meridaNow(){ var n=new Date(); return new Date(n.getTime()+n.getTimezoneOffset()*60000+TZ_OFFSET*3600000); }
   var START = Date.UTC(2026,10,17,15,30,0); // 17 nov 2026 09:30 en Mérida
-  var END   = Date.UTC(2026,10,20,2,0,0);   // 19 nov 2026 20:00 en Mérida
+  var END   = Date.UTC(2026,10,19,20,0,0);  // 19 nov 2026 14:00 en Mérida
 
   /* Nav: fondo al hacer scroll + menú móvil */
   var nav=document.getElementById('nav'), toggle=document.getElementById('navToggle');
@@ -104,8 +104,8 @@
   /* Enlace a Google Calendar */
   var gcal='https://calendar.google.com/calendar/render?action=TEMPLATE'
     +'&text='+encodeURIComponent('XVII Jornadas Internacionales del Concreto Armado')
-    +'&dates=20261117T153000Z/20261120T020000Z'
-    +'&details='+encodeURIComponent('Obras de concreto: daños, resiliencia, sustentabilidad y economía circular. Sedes: FI-UADY (17 nov), Cinvestav Mérida y Colegio de Ingenieros Civiles de Yucatán (18 nov), Puerto de Altura de Progreso (19 nov).')
+    +'&dates=20261117T150000Z/20261119T200000Z'
+    +'&details='+encodeURIComponent('Obras de concreto: daños, resiliencia, sustentabilidad y economía circular. Modalidad híbrida, entrada gratuita. Sedes: Facultad de Ingeniería UADY (17 nov), Cinvestav Mérida (18 nov), Puerto de Altura de Progreso (19 nov). Actividades con cupo limitado en el Colegio de Ingenieros Civiles de Yucatán A.C.')
     +'&location='+encodeURIComponent('Mérida y Progreso, Yucatán, México');
   ['gcalHero','gcalProgram','gcalCta'].forEach(function(id){ var a=document.getElementById(id); if(a) a.href=gcal; });
 })();
