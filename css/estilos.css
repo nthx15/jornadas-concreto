@@ -211,14 +211,14 @@ p{margin:0 0 1rem}
 .pending{display:inline-flex;align-items:center;gap:6px;font-size:12px !important;font-weight:500;color:#5F523A !important;background:#F6F2EA;border:1px dashed #b2a18080;border-radius:999px;padding:3px 11px;margin-top:6px !important}
 .pending::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--color-accent)}
 .slot--break{padding:12px 0}
-.slot--break::before{width:9px;height:9px;left:146px;top:19px;border-color:var(--color-border);background:var(--color-background-section)}
-.slot--break time{font-size:13px;color:var(--color-text-light)}
-.slot--break .slot__card{background:transparent;border:1px dashed var(--color-border);box-shadow:none;padding:10px 18px}
+.slot--break::before{width:9px;height:9px;left:146px;top:19px;border-color:#E8A86B;background:#FDF0E3}
+.slot--break time{font-size:13px;color:#A3561C}
+.slot--break .slot__card{background:linear-gradient(90deg,#FCE7D2,#FDF3E9);border:1px dashed #EDB98A;box-shadow:none;padding:10px 18px}
 .slot--break .slot__card:hover{transform:none}
-.slot--break h4{font-family:var(--font-sans);font-size:14px;font-weight:600;color:var(--color-text-light);margin:0;letter-spacing:.04em}
+.slot--break h4{font-family:var(--font-sans);font-size:14px;font-weight:600;color:#9A4A12;margin:0;letter-spacing:.04em}
 .session{position:relative;display:grid;grid-template-columns:150px 1fr;gap:0 40px;padding:18px 0 4px}
-.session div{grid-column:2;font-family:var(--font-mono);font-size:12px;letter-spacing:.06em;color:var(--color-primary);background:linear-gradient(90deg,#eef2fb,transparent);border-left:3px solid var(--color-accent);padding:10px 16px;border-radius:0 8px 8px 0}
-.session b{font-weight:500;text-transform:uppercase;letter-spacing:.12em}
+.session div{grid-column:2;font-family:var(--font-mono);font-size:14px;letter-spacing:.06em;color:var(--color-primary-dark);background:linear-gradient(90deg,#cfdaf2,#e3e9f7 60%,transparent);border-left:4px solid var(--color-primary);padding:12px 18px;border-radius:0 8px 8px 0}
+.session b{font-weight:600;text-transform:uppercase;letter-spacing:.12em}
 .slot.is-now .slot__card{border-color:var(--color-ember);box-shadow:0 0 0 4px #c42d0a1a,var(--shadow-lg)}
 .slot.is-now::before{background:var(--color-ember);border-color:var(--color-ember);box-shadow:0 0 0 6px #c42d0a2e}
 .now-badge{display:none;float:right;font-family:var(--font-mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#fff;background:var(--color-ember);border-radius:999px;padding:3px 10px;margin-left:10px}
