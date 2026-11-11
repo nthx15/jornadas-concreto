@@ -66,7 +66,7 @@ p{margin:0 0 1rem}
 .nav.is-scrolled{background:#09112bd9;-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-color:#ffffff14;box-shadow:0 10px 30px #00000033}
 .nav__inner{width:100%;max-width:1240px;margin:0 auto;padding:0 var(--pad-x);display:flex;align-items:center;justify-content:space-between;gap:24px}
 .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:#fff}
-.brand__logo{width:40px;height:auto}
+.brand__logo{width:56px;height:42px;flex:none}
 .brand__text{display:flex;flex-direction:column;line-height:1.1}
 .brand__name{font-family:var(--font-display);font-weight:700;font-size:18px}
 .brand__name span{color:var(--color-accent)}
@@ -91,11 +91,7 @@ p{margin:0 0 1rem}
 .hero__orb--gold{width:640px;height:640px;right:-120px;top:-140px;background:radial-gradient(circle,rgba(178,161,128,.14) 0%,transparent 65%);animation:floatY 9s ease-in-out infinite}
 .hero__orb--ember{width:420px;height:420px;left:-80px;bottom:-60px;background:radial-gradient(circle,rgba(196,45,10,.12) 0%,transparent 65%);animation:floatY 11s ease-in-out infinite 2s}
 /* Sección transversal de viga: guiño a concreto armado */
-.hero__rebar{position:absolute;right:var(--pad-x);top:50%;transform:translateY(-58%);width:min(34vw,460px);opacity:.9;pointer-events:none}
-.hero__rebar .stroke{stroke:#ffffff2e}
-.hero__rebar .bar{fill:var(--color-accent);opacity:.85}
-.hero__rebar .dim{stroke:#ffffff40;stroke-dasharray:3 5}
-.hero__rebar text{font-family:var(--font-mono);font-size:10px;letter-spacing:.12em;fill:#ffffff66}
+.hero__logo{position:absolute;right:max(var(--pad-x),calc((100% - 1240px)/2 + var(--pad-x)));top:50%;transform:translateY(-55%);width:min(28vw,380px);height:auto;aspect-ratio:1010/765;color:#fff;pointer-events:none;animation:fadeIn 1.4s var(--ease-out) .5s both}
 .hero__content{position:relative;z-index:2;max-width:720px}
 .eyebrow-pill{display:inline-flex;align-items:center;gap:10px;background:#b2a18026;border:1px solid rgba(178,161,128,.3);border-radius:999px;padding:6px 16px;font-size:12px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--color-accent);margin-bottom:1.6rem;animation:fadeIn .6s ease both}
 .eyebrow-pill::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--color-accent);animation:goldPulse 2s ease-in-out infinite}
@@ -322,7 +318,7 @@ p{margin:0 0 1rem}
 .footer{background:var(--color-primary-deep);color:#ffffffa6;padding:4rem 0 2rem}
 .footer__top{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:3rem;padding-bottom:2.5rem;border-bottom:1px solid #ffffff14}
 .footer__brand{display:flex;gap:16px;align-items:flex-start}
-.footer__brand svg{width:56px;flex:none;opacity:.9}
+.footer__brand svg{width:84px;height:64px;flex:none;opacity:.95}
 .footer__brand strong{display:block;font-family:var(--font-display);font-size:19px;color:#fff;line-height:1.25;margin-bottom:6px}
 .footer h4{font-family:var(--font-mono);font-size:11px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--color-accent);margin-bottom:14px}
 .footer ul{list-style:none;margin:0;padding:0;display:grid;gap:8px;font-size:14px}
@@ -347,7 +343,7 @@ p{margin:0 0 1rem}
 
 /* ---------- Responsive ---------- */
 @media (max-width:1180px){
-  .hero__rebar{opacity:.35;right:-40px;width:420px}
+  .hero__logo{opacity:.18;right:-40px;width:420px;animation:none}
   .venues{grid-template-columns:repeat(2,1fr)}
 }
 @media (max-width:1024px){
@@ -370,7 +366,7 @@ p{margin:0 0 1rem}
   :root{--pad-x:1.5rem;--nav-h:64px}
   .section{padding:4.5rem 0}
   .hero{--ticker-h:96px}
-  .hero__rebar{display:none}
+  .hero__logo{display:none}
   .countdown{flex-wrap:wrap}
   .countdown__cell{min-width:0;flex:1 1 0;padding:12px 6px 10px}
   .countdown__num{font-size:26px}
