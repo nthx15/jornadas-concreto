@@ -27,7 +27,7 @@
         }
       });
     },{rootMargin:'-45% 0px -50% 0px'});
-    ['evento','temas','programa','ponentes','sedes'].forEach(function(id){ var el=document.getElementById(id); if(el) spy.observe(el); });
+    ['evento','temas','programa','ponentes','sedes','comites'].forEach(function(id){ var el=document.getElementById(id); if(el) spy.observe(el); });
 
     /* Reveal al hacer scroll */
     var rev=new IntersectionObserver(function(entries){
