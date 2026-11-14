@@ -412,3 +412,18 @@ p{margin:0 0 1rem}
 .member--chair .mini-avatar{background:linear-gradient(135deg,var(--color-accent),var(--color-accent-text))}
 @media (max-width:1024px){.committee{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:640px){.committee{grid-template-columns:1fr}}
+
+/* ===== Programa final: coordinadores, temas, cambio de sede y grupos ===== */
+.session__coord{display:block;margin-top:4px;font-family:var(--font-sans);font-size:13.5px;letter-spacing:0;text-transform:none;color:var(--color-text)}
+.li-topic{display:block;font-size:13.5px;font-style:italic;color:var(--color-accent-text)}
+.slot__card h4+h4{margin-top:2px}
+.slot__card .dress{font-size:13.5px;margin-top:10px;padding:8px 12px;border-radius:8px;background:var(--color-primary-light)}
+.slot--move .slot__card{background:linear-gradient(90deg,#e3e9f7,#f1f4fb);border-color:#9fb2dd}
+.slot--move h4{color:var(--color-primary-dark)}
+.slot--move::before{border-color:var(--color-primary);background:#e3e9f7}
+.groups{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:6px}
+.group{border:1px solid var(--color-border-light);border-radius:12px;padding:12px 14px;background:var(--color-primary-light)}
+.group p{font-size:14px;margin:0 0 .5rem}
+.group p:last-child{margin-bottom:0}
+.group__tag{display:block;font-family:var(--font-mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--color-primary-dark);margin-bottom:6px;font-weight:600}
+@media (max-width:640px){.groups{grid-template-columns:1fr}}
