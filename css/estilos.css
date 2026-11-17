@@ -490,3 +490,11 @@ li.panelist--modal{margin:-4px -8px;padding:4px 8px}
 @media (max-width:768px){.spk__foot{padding:0 24px 26px}.spk__dl{width:100%;justify-content:center}}
 .spk__kicker{padding-right:44px}
 .spk__honor{font-size:13px;line-height:1.4;color:var(--color-accent);margin:-4px 0 12px;font-style:italic}
+/* Barra de desplazamiento del modal: delgada, discreta y sin chocar con la X */
+@supports not selector(::-webkit-scrollbar){.spk__content{scrollbar-width:thin;scrollbar-color:#b2a180b3 transparent}}
+.spk__content::-webkit-scrollbar{width:10px}
+.spk__content::-webkit-scrollbar-track{background:transparent;margin:14px 0}
+.spk__content::-webkit-scrollbar-thumb{background:#b2a18099;border-radius:999px;border:3px solid transparent;background-clip:padding-box}
+.spk__content::-webkit-scrollbar-thumb:hover{background:#8c7b5ccc;border:3px solid transparent;background-clip:padding-box}
+.spk__close{right:26px}
+@media (max-width:768px){.spk__close{right:20px;top:12px}}
