@@ -427,3 +427,48 @@ p{margin:0 0 1rem}
 .group p:last-child{margin-bottom:0}
 .group__tag{display:block;font-family:var(--font-mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--color-primary-dark);margin-bottom:6px;font-weight:600}
 @media (max-width:640px){.groups{grid-template-columns:1fr}}
+
+/* ===== Conferencistas magistrales: tarjeta clicable + modal ===== */
+.person--modal{cursor:pointer}
+.person--modal:focus-visible{outline:3px solid var(--color-accent);outline-offset:3px}
+.avatar--photo{overflow:hidden;padding:0;background:var(--color-primary-dark)}
+.avatar--photo img{width:100%;height:100%;object-fit:cover;border-radius:50%;display:block}
+.person__more{display:inline-flex;align-items:center;gap:6px;margin-top:14px;font-family:var(--font-mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--color-primary);transition:gap .2s,color .2s}
+.person__more svg{width:14px;height:14px;fill:none;stroke:currentColor}
+.person--modal:hover .person__more{gap:10px;color:var(--color-accent-text)}
+
+.spk{width:min(820px,calc(100vw - 32px));max-height:calc(100vh - 48px);padding:0;border:0;border-radius:var(--radius-2xl);background:var(--color-background-card);color:var(--color-text);box-shadow:0 30px 80px #09112b66;overflow:hidden}
+.spk[open]{display:flex;flex-direction:column;animation:spkIn .35s var(--ease-out)}
+.spk::backdrop{background:#09112bcc;backdrop-filter:blur(4px)}
+@keyframes spkIn{from{opacity:0;transform:translateY(24px) scale(.98)}to{opacity:1;transform:none}}
+.spk__content{overflow-y:auto;overscroll-behavior:contain}
+.spk__close{position:absolute;top:14px;right:14px;z-index:2;width:40px;height:40px;border-radius:50%;border:1px solid #ffffff40;background:#ffffff14;color:#fff;font-size:26px;line-height:1;cursor:pointer;transition:background .2s,transform .2s}
+.spk__close:hover{background:var(--color-accent);color:var(--color-primary-dark);transform:rotate(90deg)}
+.spk__close:focus-visible{outline:3px solid var(--color-accent);outline-offset:2px}
+.spk__head{position:relative;display:flex;gap:28px;align-items:center;padding:36px 40px 32px;color:#fff;background:radial-gradient(circle at 85% -20%,rgba(178,161,128,.28),transparent 55%),linear-gradient(135deg,var(--color-primary-dark),var(--color-primary-deep));border-bottom:3px solid var(--color-accent)}
+.spk__photo{flex:none;width:150px;height:150px;border-radius:50%;padding:5px;background:linear-gradient(135deg,var(--color-accent-hover),var(--color-accent-text));box-shadow:0 10px 30px #0006}
+.spk__photo img{width:100%;height:100%;border-radius:50%;object-fit:cover;display:block;border:3px solid var(--color-primary-dark)}
+.spk__kicker{display:block;font-family:var(--font-mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--color-accent);margin-bottom:.4rem}
+.spk__name{font-family:var(--font-display);font-size:clamp(24px,3vw,32px);font-weight:700;line-height:1.15;color:#fff;margin:0 0 12px;padding-right:40px}
+.spk__head .person__role{background:#ffffff14;color:#F3EEE4;border-color:#b2a18080}
+.spk__talk{font-family:var(--font-display);font-style:italic;font-size:17px;line-height:1.4;color:#ffffffe6;margin:12px 0 0}
+.spk__facts{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;margin:0;background:var(--color-border-light);border-bottom:1px solid var(--color-border-light)}
+.spk__facts > div{background:var(--color-background-section);padding:22px 24px}
+.spk__facts dt{display:flex;align-items:center;gap:8px;font-family:var(--font-mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--color-accent-text);margin-bottom:8px}
+.spk__facts dt svg{width:16px;height:16px;fill:var(--color-accent);flex:none}
+.spk__facts dd{margin:0;font-size:14px;line-height:1.55;color:var(--color-text)}
+.spk__body{padding:28px 40px 36px}
+.spk__body h3{display:flex;align-items:center;gap:16px;font-family:var(--font-mono);font-size:12px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--color-primary);margin:0 0 1rem}
+.spk__body h3::after{content:"";flex:1;height:1px;background:var(--color-border)}
+.spk__body p{font-size:15.5px;line-height:1.75;color:var(--color-text);margin:0 0 1em;text-align:justify;hyphens:auto}
+.spk__body p:last-child{margin-bottom:0}
+body.spk-open{overflow:hidden}
+@media (max-width:768px){
+  .spk__head{flex-direction:column;align-items:flex-start;gap:18px;padding:28px 24px 24px}
+  .spk__photo{width:112px;height:112px}
+  .spk__facts{grid-template-columns:1fr}
+  .spk__facts > div{padding:18px 24px}
+  .spk__body{padding:24px 24px 30px}
+  .spk__body p{text-align:left}
+}
+@media (prefers-reduced-motion:reduce){.spk[open]{animation:none}}

@@ -260,9 +260,9 @@
 
     <h3 class="group-title reveal">Conferencias magistrales</h3>
     <div class="people">
-      <article class="person reveal"><div class="avatar">JM</div><div><h3>Dr. José Manuel Mendoza Rangel</h3><p class="person__org">Facultad de Ingeniería Civil de la UANL · Presidente de Alconpat Internacional</p><span class="person__role">Martes 17 · 10:30</span><p style="font-size:13.5px;color:var(--color-text);margin:10px 0 0;line-height:1.45">«Economía circular… ¿estaremos cerca?»</p></div></article>
-      <article class="person reveal reveal-d1"><div class="avatar">EP</div><div><h3>Dr. Enio José Pazini Figueiredo</h3><p class="person__org">Universidad Federal de Goiás, Brasil · Presidente de Honor de Alconpat Internacional</p><span class="person__role">Miércoles 18 · 09:30</span><p style="font-size:13.5px;color:var(--color-text);margin:10px 0 0;line-height:1.45">«Proyecto para la durabilidad de estructuras de concreto sostenibles»</p></div></article>
-      <article class="person reveal reveal-d2"><div class="avatar">MB</div><div><h3>Mario Baggio</h3><p class="person__org">CEO y Presidente de Alchemco, EE. UU.</p><span class="person__role">Miércoles 18 · 10:30</span><p style="font-size:13.5px;color:var(--color-text);margin:10px 0 0;line-height:1.45">«Impermeabilización enzimática y vida útil de estructuras de concreto»</p></div></article>
+      <article class="person person--modal reveal" role="button" tabindex="0" data-speaker="jose" aria-haspopup="dialog" aria-label="Ver semblanza y resumen de Dr. José Manuel Mendoza Rangel"><div class="avatar avatar--photo"><img src="img/conferencistas/jose.jpg" alt="" loading="lazy" width="64" height="64"></div><div><h3>Dr. José Manuel Mendoza Rangel</h3><p class="person__org">Facultad de Ingeniería Civil de la UANL · Presidente de Alconpat Internacional</p><span class="person__role">Martes 17 · 10:30</span><p style="font-size:13.5px;color:var(--color-text);margin:10px 0 0;line-height:1.45">«Economía circular… ¿estaremos cerca?»</p><span class="person__more">Ver semblanza y resumen <svg aria-hidden="true"><use href="#i-arrow"/></svg></span></div></article>
+      <article class="person person--modal reveal reveal-d1" role="button" tabindex="0" data-speaker="enio" aria-haspopup="dialog" aria-label="Ver semblanza y resumen de Dr. Enio José Pazini Figueiredo"><div class="avatar avatar--photo"><img src="img/conferencistas/enio.jpg" alt="" loading="lazy" width="64" height="64"></div><div><h3>Dr. Enio José Pazini Figueiredo</h3><p class="person__org">Universidad Federal de Goiás, Brasil · Presidente de Honor de Alconpat Internacional</p><span class="person__role">Miércoles 18 · 09:30</span><p style="font-size:13.5px;color:var(--color-text);margin:10px 0 0;line-height:1.45">«Proyecto para la durabilidad de estructuras de concreto sostenibles»</p><span class="person__more">Ver semblanza y resumen <svg aria-hidden="true"><use href="#i-arrow"/></svg></span></div></article>
+      <article class="person person--modal reveal reveal-d2" role="button" tabindex="0" data-speaker="mario" aria-haspopup="dialog" aria-label="Ver semblanza y resumen de Dr. Mario Baggio"><div class="avatar avatar--photo"><img src="img/conferencistas/mario.jpg" alt="" loading="lazy" width="64" height="64"></div><div><h3>Dr. Mario Baggio</h3><p class="person__org">CEO y Presidente de Alchemco, EE. UU.</p><span class="person__role">Miércoles 18 · 10:30</span><p style="font-size:13.5px;color:var(--color-text);margin:10px 0 0;line-height:1.45">«Impermeabilización enzimática y vida útil de estructuras de concreto»</p><span class="person__more">Ver semblanza y resumen <svg aria-hidden="true"><use href="#i-arrow"/></svg></span></div></article>
     </div>
 
     <h3 class="group-title group-title--spaced reveal">Paneles de expertos</h3>
@@ -449,6 +449,63 @@
   </div>
 </footer>
 
+
+<!-- Modal de conferencistas magistrales (contenido tomado de los flyers oficiales) -->
+<dialog class="spk" id="speakerModal" aria-labelledby="speakerTitle">
+  <button class="spk__close" type="button" aria-label="Cerrar">&times;</button>
+  <div class="spk__content"></div>
+</dialog>
+<template id="speaker-jose">
+  <header class="spk__head">
+    <div class="spk__photo"><img src="img/conferencistas/jose.jpg" alt="Fotografía de Dr. José Manuel Mendoza Rangel" width="160" height="160"></div>
+    <div class="spk__intro">
+      <span class="spk__kicker">Conferencia magistral</span>
+      <h2 class="spk__name" id="speakerTitle">Dr. José Manuel Mendoza Rangel</h2>
+      <span class="person__role">Martes 17 · 10:30 · FIUADY</span>
+      <p class="spk__talk">«Economía circular… ¿estaremos cerca?»</p>
+    </div>
+  </header>
+  <dl class="spk__facts">
+    <div><dt><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 1 9l11 6 9-4.9V17h2V9L12 3zM5 13.2v4L12 21l7-3.8v-4L12 17l-7-3.8z"/></svg>Formación</dt><dd>Ingeniero Civil; Maestría en Metalurgia y Ciencias de los Materiales; Master en Innovación en las Técnicas, los Sistemas y Materiales de Construcción; Doctor en Ciencias con Especialidad en Física Aplicada.</dd></div>
+    <div><dt><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 2 7v2h20V7L12 2zM4 11v7h3v-7H4zm6.5 0v7h3v-7h-3zM17 11v7h3v-7h-3zM2 20v2h20v-2H2z"/></svg>Institución de adscripción</dt><dd>Universidad Autónoma de Nuevo León (UANL).</dd></div>
+    <div><dt><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.4 13a7.5 7.5 0 0 0 0-2l2.1-1.6-2-3.5-2.5 1a7.3 7.3 0 0 0-1.7-1L15 3h-4l-.3 2.9a7.3 7.3 0 0 0-1.7 1l-2.5-1-2 3.5L6.6 11a7.5 7.5 0 0 0 0 2l-2.1 1.6 2 3.5 2.5-1c.5.4 1.1.7 1.7 1L11 21h4l.3-2.9c.6-.3 1.2-.6 1.7-1l2.5 1 2-3.5-2.1-1.6zM13 15.5a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7z" transform="translate(-1 0)"/></svg>Área de investigación</dt><dd>Durabilidad de las estructuras de concreto y materiales sustentables.</dd></div>
+  </dl>
+  <section class="spk__body"><h3>Resumen de la conferencia</h3><p>La industria de la construcción enfrenta uno de los mayores desafíos de su historia: transformar sus procesos, materiales y modelos de producción para responder a las exigencias de sostenibilidad, mitigación del cambio climático y uso eficiente de los recursos naturales. En este contexto, la economía circular representa una oportunidad para replantear la manera en que concebimos, diseñamos, producimos, construimos, utilizamos y rehabilitamos nuestras edificaciones e infraestructuras. Sin embargo, surge una pregunta fundamental: ¿realmente estamos cerca de alcanzar una economía circular en la industria de la construcción, o seguimos transitando entre buenas intenciones, iniciativas aisladas y cambios todavía insuficientes? Esta conferencia propone una reflexión sobre el estado actual de la economía circular en la industria del cemento y del concreto, abordando los avances en el aprovechamiento de residuos de construcción y demolición, la incorporación de materiales reciclados y alternativos, el desarrollo de materiales cementantes de menor huella de carbono, la reutilización de componentes constructivos y la aplicación de nuevas tecnologías para impulsar una construcción más eficiente y sostenible.</p><p>La economía circular no debe ser solamente una aspiración ambiental, sino una nueva manera de concebir el futuro de la construcción. La pregunta no es únicamente si estaremos cerca, sino qué estamos haciendo hoy para llegar a ella.</p></section>
+</template>
+<template id="speaker-enio">
+  <header class="spk__head">
+    <div class="spk__photo"><img src="img/conferencistas/enio.jpg" alt="Fotografía de Dr. Enio José Pazini Figueiredo" width="160" height="160"></div>
+    <div class="spk__intro">
+      <span class="spk__kicker">Conferencia magistral</span>
+      <h2 class="spk__name" id="speakerTitle">Dr. Enio José Pazini Figueiredo</h2>
+      <span class="person__role">Miércoles 18 · 09:30 · Cinvestav</span>
+      <p class="spk__talk">«Proyecto para la durabilidad de estructuras de concreto sostenibles»</p>
+    </div>
+  </header>
+  <dl class="spk__facts">
+    <div><dt><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 1 9l11 6 9-4.9V17h2V9L12 3zM5 13.2v4L12 21l7-3.8v-4L12 17l-7-3.8z"/></svg>Formación</dt><dd>Ingeniero Civil y de Seguridad, Especialista en Patología de las Construcciones; Maestro en Construcción Civil; Doctor en Ingeniería de Construcción Civil y Urbana.</dd></div>
+    <div><dt><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 2 7v2h20V7L12 2zM4 11v7h3v-7H4zm6.5 0v7h3v-7h-3zM17 11v7h3v-7h-3zM2 20v2h20v-2H2z"/></svg>Institución de adscripción</dt><dd>Universidad Federal de Goiás.</dd></div>
+    <div><dt><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.4 13a7.5 7.5 0 0 0 0-2l2.1-1.6-2-3.5-2.5 1a7.3 7.3 0 0 0-1.7-1L15 3h-4l-.3 2.9a7.3 7.3 0 0 0-1.7 1l-2.5-1-2 3.5L6.6 11a7.5 7.5 0 0 0 0 2l-2.1 1.6 2 3.5 2.5-1c.5.4 1.1.7 1.7 1L11 21h4l.3-2.9c.6-.3 1.2-.6 1.7-1l2.5 1 2-3.5-2.1-1.6zM13 15.5a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7z" transform="translate(-1 0)"/></svg>Área de investigación</dt><dd>Durabilidad, el monitoreo mediante técnicas no destructivas (electromagnéticas, electroquímicas y ultrasónicas), la corrosión, la rehabilitación y la protección de estructuras de concreto.</dd></div>
+  </dl>
+  <section class="spk__body"><h3>Semblanza</h3><p>Realizó estudios de perfeccionamiento en Construcción Avanzada (JICA, Japón, 1998) y una estancia posdoctoral en la Universidad Noruega de Ciencia y Tecnología (NTNU, Noruega, 2009). En 2013 recibió el título de Doctor Honoris Causa por la Universidad Católica de Petrópolis (UCP).</p><p>Desde 1995 es Profesor Titular de la Universidad Federal de Goiás. Fue Presidente (2016–2018) y Vicepresidente (2005–2009) de la Asociación Brasileña de Patología de las Construcciones (ALCONPAT Brasil). Se desempeñó como Delegado Nacional de la RILEM entre 1994 y 1998. Fue Presidente de ALCONPAT Internacional (2021–2025) y actualmente es Presidente Honorario de dicha asociación.</p><p>Ha ocupado diversos cargos en el Instituto Brasileño del Concreto (IBRACON), donde actualmente se desempeña como Vicepresidente. En 2023 recibió el título de Miembro Honorario del Instituto Brasileño de Evaluaciones y Peritajes de Ingeniería de Goiás (IBAPE/GO), en reconocimiento a sus relevantes contribuciones a dicha institución y a la sociedad.</p><p>Ha recibido numerosos premios y distinciones en Brasil y en el extranjero. Ha publicado más de 200 artículos científicos en congresos y revistas nacionales e internacionales. Ha dirigido y codirigido tesis de maestría y doctorado, así como investigaciones posdoctorales. Es autor y coautor de libros publicados en Brasil y en otros países.</p><p>Ha sido invitado como conferencista en congresos nacionales e internacionales y ha participado como consultor en importantes proyectos de infraestructura en Brasil y América del Sur.</p><p>Cuenta con amplia experiencia en el campo de la durabilidad de las estructuras de concreto reforzado, particularmente en temas relacionados con el concreto, la durabilidad, el monitoreo mediante técnicas no destructivas (electromagnéticas, electroquímicas y ultrasónicas), la corrosión, la rehabilitación y la protección de estructuras de concreto.</p></section>
+</template>
+<template id="speaker-mario">
+  <header class="spk__head">
+    <div class="spk__photo"><img src="img/conferencistas/mario.jpg" alt="Fotografía de Dr. Mario Baggio" width="160" height="160"></div>
+    <div class="spk__intro">
+      <span class="spk__kicker">Conferencia magistral</span>
+      <h2 class="spk__name" id="speakerTitle">Dr. Mario Baggio</h2>
+      <span class="person__role">Miércoles 18 · 10:30 · Cinvestav</span>
+      <p class="spk__talk">«Impermeabilización enzimática y vida útil de estructuras de concreto»</p>
+    </div>
+  </header>
+  <dl class="spk__facts">
+    <div><dt><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 1 9l11 6 9-4.9V17h2V9L12 3zM5 13.2v4L12 21l7-3.8v-4L12 17l-7-3.8z"/></svg>Cargo</dt><dd>CEO, Alchemco.</dd></div>
+    <div><dt><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 2 7v2h20V7L12 2zM4 11v7h3v-7H4zm6.5 0v7h3v-7h-3zM17 11v7h3v-7h-3zM2 20v2h20v-2H2z"/></svg>Institución de adscripción</dt><dd>Alchemco.</dd></div>
+    <div><dt><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.4 13a7.5 7.5 0 0 0 0-2l2.1-1.6-2-3.5-2.5 1a7.3 7.3 0 0 0-1.7-1L15 3h-4l-.3 2.9a7.3 7.3 0 0 0-1.7 1l-2.5-1-2 3.5L6.6 11a7.5 7.5 0 0 0 0 2l-2.1 1.6 2 3.5 2.5-1c.5.4 1.1.7 1.7 1L11 21h4l.3-2.9c.6-.3 1.2-.6 1.7-1l2.5 1 2-3.5-2.1-1.6zM13 15.5a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7z" transform="translate(-1 0)"/></svg>Área de investigación</dt><dd>Durabilidad del concreto e impermeabilización integral, con enfoque en membranas subsuperficiales autorreparables a base de enzimas y su desempeño frente al agua, los cloruros y el daño por congelamiento y deshielo.</dd></div>
+  </dl>
+  <section class="spk__body"><h3>Resumen de la conferencia</h3><p>La infiltración de humedad, la penetración de cloruros y los ciclos de congelamiento y deshielo se encuentran entre las principales causas de deterioro del concreto, lo que incrementa los costos de mantenimiento y reduce la vida útil de las estructuras. Los recubrimientos superficiales brindan una protección temporal y requieren reaplicaciones periódicas.</p><p>La impermeabilización a base de enzimas actúa dentro de la matriz del concreto y no sobre su superficie. Las enzimas catalizan una reacción que forma una membrana subsuperficial resistente al estrés térmico, capaz de sellar grietas de hasta 2 mm de ancho. Gracias a sus propiedades regenerativas, la membrana constituye una barrera autorreparable contra el agua y los agentes corrosivos a lo largo del tiempo.</p><p>La ponencia revisará el mecanismo de la membrana subsuperficial a base de enzimas, presentará casos de estudio en ambientes de exposición agresiva y analizará su efecto en la vida útil y en el costo del ciclo de vida, en comparación con la protección superficial convencional.</p></section>
+</template>
 <script src="js/main.js" defer></script>
 </body>
 </html>

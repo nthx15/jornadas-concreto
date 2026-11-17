@@ -109,3 +109,26 @@
     +'&location='+encodeURIComponent('Mérida y Progreso, Yucatán, México');
   ['gcalHero','gcalProgram','gcalCta'].forEach(function(id){ var a=document.getElementById(id); if(a) a.href=gcal; });
 })();
+
+/* Modal de conferencistas magistrales */
+(function(){
+  var modal=document.getElementById('speakerModal');
+  if(!modal || typeof modal.showModal!=='function') return;
+  var content=modal.querySelector('.spk__content'), lastFocus=null;
+  function open(card){
+    var tpl=document.getElementById('speaker-'+card.dataset.speaker);
+    if(!tpl) return;
+    lastFocus=card;
+    content.innerHTML=''; content.appendChild(tpl.content.cloneNode(true)); content.scrollTop=0;
+    modal.showModal(); document.body.classList.add('spk-open');
+    modal.querySelector('.spk__close').focus();
+  }
+  function close(){ modal.close(); }
+  modal.addEventListener('close',function(){ document.body.classList.remove('spk-open'); if(lastFocus) lastFocus.focus(); });
+  modal.querySelector('.spk__close').addEventListener('click',close);
+  modal.addEventListener('click',function(e){ if(e.target===modal) close(); });
+  document.querySelectorAll('.person--modal').forEach(function(card){
+    card.addEventListener('click',function(){ open(card); });
+    card.addEventListener('keydown',function(e){ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); open(card); } });
+  });
+})();
