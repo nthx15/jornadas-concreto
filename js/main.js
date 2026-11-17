@@ -127,7 +127,7 @@
   modal.addEventListener('close',function(){ document.body.classList.remove('spk-open'); if(lastFocus) lastFocus.focus(); });
   modal.querySelector('.spk__close').addEventListener('click',close);
   modal.addEventListener('click',function(e){ if(e.target===modal) close(); });
-  document.querySelectorAll('.person--modal').forEach(function(card){
+  document.querySelectorAll('[data-speaker]').forEach(function(card){
     card.addEventListener('click',function(){ open(card); });
     card.addEventListener('keydown',function(e){ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); open(card); } });
   });
